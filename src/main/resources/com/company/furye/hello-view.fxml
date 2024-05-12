@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<GridPane alignment="CENTER" hgap="10" vgap="10" xmlns:fx="http://javafx.com/fxml"
+          fx:controller="com.company.furye.HelloController" styleClass="main-container">
+    <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES"/>
+        <ColumnConstraints hgrow="SOMETIMES"/>
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints vgrow="SOMETIMES"/>
+        <RowConstraints vgrow="SOMETIMES"/>
+        <RowConstraints vgrow="SOMETIMES"/>
+        <RowConstraints vgrow="SOMETIMES"/>
+        <RowConstraints vgrow="SOMETIMES"/>
+    </rowConstraints>
+
+    <Label text="a0:" styleClass="label-text" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+    <TextField fx:id="a0Field" styleClass="input-field" GridPane.columnIndex="1" GridPane.rowIndex="0"/>
+
+    <Label text="an" styleClass="label-text" GridPane.columnIndex="0" GridPane.rowIndex="5"/>
+    <Label text="bn" styleClass="label-text" GridPane.columnIndex="1" GridPane.rowIndex="5"/>
+
+    <VBox fx:id="aFieldsContainer" GridPane.columnIndex="0" GridPane.rowIndex="6">
+        <!-- dinamik -->
+    </VBox>
+
+    <VBox fx:id="bFieldsContainer" GridPane.columnIndex="1" GridPane.rowIndex="6">
+        <!-- dinamik -->
+    </VBox>
+
+    <Label text="i_max:" styleClass="label-text" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+    <TextField fx:id="iMaxField" styleClass="input-field" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+
+    <Label text="w0:" styleClass="label-text" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+    <TextField fx:id="omegaField" styleClass="input-field" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+
+    <Label text="delta_t:" styleClass="label-text" GridPane.columnIndex="0" GridPane.rowIndex="3"/>
+    <TextField fx:id="deltaTField" styleClass="input-field" GridPane.columnIndex="1" GridPane.rowIndex="3"/>
+
+    <Label text="n_max:" styleClass="label-text" GridPane.columnIndex="0" GridPane.rowIndex="4"/>
+    <TextField fx:id="nMaxField" styleClass="input-field" GridPane.columnIndex="1" GridPane.rowIndex="4"/>
+
+    <Button text="Plot" onAction="#plotButtonClicked" styleClass="plot-button" GridPane.columnSpan="2"
+            GridPane.rowIndex="7"/>
+
+    <LineChart fx:id="lineChart" styleClass="line-chart" GridPane.columnSpan="2" GridPane.rowIndex="8">
+        <xAxis>
+            <NumberAxis/>
+        </xAxis>
+        <yAxis>
+            <NumberAxis/>
+        </yAxis>
+    </LineChart>
+</GridPane>
+

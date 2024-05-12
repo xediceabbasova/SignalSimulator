@@ -1,0 +1,49 @@
+.main-container {
+    -fx-padding: 20px;
+    -fx-spacing: 10px;
+    -fx-background-color: #B0E0E6;
+    -fx-border-color: #ccc;
+    -fx-border-width: 1px;
+    -fx-border-radius: 5px;
+}
+
+.label-text {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #333;
+}
+
+.input-field {
+    -fx-pref-width: 120px;
+    -fx-font-size: 14px;
+    -fx-background-color: white;
+    -fx-border-color: #ccc;
+    -fx-border-width: 1px;
+    -fx-border-radius: 5px;
+    -fx-text-fill: #333;
+    -fx-font-family: "Arial";
+}
+
+.input-field:focused {
+    -fx-border-color: #4CAF50;
+}
+
+.plot-button {
+    -fx-background-color: #4CAF50;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-pref-width: 120px;
+    -fx-pref-height: 40px;
+    -fx-border-radius: 5px;
+}
+
+.plot-button:hover {
+    -fx-background-color: #45a049;
+}
+
+.line-chart {
+    -fx-background-color: white;
+    -fx-border-color: #ccc;
+    -fx-border-width: 1px;
+    -fx-border-radius: 5px;
+}
